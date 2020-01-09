@@ -11,7 +11,7 @@ export class U4LocaleUtilsService {
     ) { }
 
     getLocale(): string {
-        // settings is filled with value en-GB - this is correct
+        // should contain value - the AppInitializer should hold loading LOCAL_ID until it finish executing...
         console.log(this.appSettingsService.settings);
         return this.appSettingsService.settings;
     }
